@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minWidth="440.0" prefHeight="689.0" prefWidth="376.0" stylesheets="@../styles/offices.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.FacilitiesController">
+    <children>
+        <Pane layoutY="599.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+            <children>
+                <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/image%2019.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="130.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/Mask%20group(1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="220.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../navbar/Subtract.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="320.0" layoutY="8.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/Mask%20group(2).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="232.0" layoutY="-20.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/R.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <ScrollPane layoutY="26.0" prefHeight="549.0" prefWidth="440.0" vbarPolicy="ALWAYS">
+            <content>
+                <Pane prefHeight="830.0" prefWidth="423.0">
+                    <children>
+                        <Label layoutX="20.0" styleClass="heading" text="Lagoon Food Stalls" />
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="228.0" layoutY="75.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Mr.%20Brewsko.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="60.0" layoutY="75.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Master%20Siomai.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="57.0" layoutY="252.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Potato%20Corner.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="228.0" layoutY="252.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Riches.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="227.0" layoutY="425.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Waffle%20Time.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="55.0" layoutY="425.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../FOOD%20STALLS/Trinas.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="139.0" layoutY="605.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../FOOD%20STALLS/Sizzling%20Sisig.png" />
+                     </image></ImageView>
+                  <Label layoutX="71.0" layoutY="219.0" styleClass="sub-heading" text="Master Siomai" />
+                  <Label layoutX="251.0" layoutY="219.0" styleClass="sub-heading" text="Mr. Brewsko" />
+                  <Label layoutX="77.0" layoutY="391.0" styleClass="sub-heading" text="Potato Corner" />
+                  <Label layoutX="266.0" layoutY="392.0" styleClass="sub-heading" text="Riches" />
+                  <Label layoutX="95.0" layoutY="567.0" styleClass="sub-heading" text="Trinas" />
+                  <Label layoutX="259.0" layoutY="567.0" styleClass="sub-heading" text="Waffle Time" />
+                  <Label layoutX="160.0" layoutY="745.0" styleClass="sub-heading" text="Sizzling Sisig" />
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="backBtn" layoutY="-10.0" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+    </children>
+</AnchorPane>

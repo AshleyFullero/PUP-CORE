@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/register.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.CreateAccountController">
+   <children>
+      <ImageView fx:id="logo" fitHeight="209.0" fitWidth="440.0" pickOnBounds="true">
+         <image>
+            <Image url="@../frames/image%2010.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="223.0" text="Create Account" />
+      <Button fx:id="studentBtn" layoutX="137.0" layoutY="313.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="193.0" styleClass="register-button" text="Student" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="professorBtn" layoutX="137.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="193.0" styleClass="register-button" text="Professor" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginBtn" layoutX="137.0" layoutY="592.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="193.0" style="-fx-font-size: 13px;" styleClass="register-button" text="Already Have an Account?" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="222.0" layoutY="360.0" style="-fx-font-size: 12px; -fx-text-fill: grey;" text="or" />
+   </children>
+</AnchorPane>

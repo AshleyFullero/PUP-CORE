@@ -1,0 +1,25 @@
+
+.label{
+    -fx-text-fill:  #800100;
+    -fx-font-size: 32px;
+}
+
+.student-label{
+    -fx-text-fill:  #686363;
+    -fx-font-size: 12px;
+
+}
+
+.text-field{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.loginButton{
+    -fx-background-color: #008B56;
+    -fx-background-radius: 10px;
+}

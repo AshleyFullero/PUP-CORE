@@ -1,0 +1,11 @@
+.heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 32px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+
+.sub-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}

@@ -1,0 +1,112 @@
+.heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 32px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+    -fx-font-weight: bold;
+}
+
+.sub-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+
+.mini-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 13px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+.announcement-hbox {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.announcement-title {
+    font-weight: bold;
+    font-size: 14px;
+    -fx-text-fill: #800100;
+}
+
+.announcement-content {
+    font-size: 12px;
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -fx-text-fill: #800100;
+    -fx-wrap-text: true;
+
+}
+
+.announcement-timestamp {
+    font-size: 10px;
+    color: #888;
+}
+
+
+.message-hbox {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.message-username {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.message-content {
+    font-size: 14px;
+    -fx-text-fill: #800100;
+
+}
+
+.message-timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.message-hbox:hover {
+    background-color: #f0f0f0;
+}
+
+.message-username, .message-content {
+    -fx-wrap-text: true;
+}
+
+.announcement-vbox {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.announcement-top-row {
+    align-items: center;
+}
+
+.announcement-username {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.announcement-title {
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.announcement-bottom-row {
+    align-items: center;
+    margin-top: 5px;
+}
+
+.announcement-content {
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.announcement-timestamp {
+    font-size: 10px;
+    color: gray;
+}

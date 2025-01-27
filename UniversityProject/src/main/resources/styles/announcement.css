@@ -1,0 +1,92 @@
+.heading{
+        -fx-text-fill: #800100;
+        -fx-font-size: 32px;
+        -fx-font-family: "League Spartan";
+         -fx-font-weight: bold;
+}
+.sub-heading{
+        -fx-text-fill: #800100;
+        -fx-font-size: 16px;
+        -fx-font-family: "League Spartan";
+}
+
+
+.mini-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 13px;
+    -fx-font-family: "League Spartan";
+}
+
+.combo-box{
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan";
+    -fx-border-color: #800100;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-background-color: white;;
+    -fx-text-fill: #800100;
+}
+
+.announcement-title {
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.announcement-bottom-row {
+    align-items: center;
+    margin-top: 5px;
+}
+
+.announcement-content {
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.announcement-timestamp {
+    font-size: 10px;
+    color: gray;
+}
+
+.announcement-vbox {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.announcement-top-row {
+    align-items: center;
+}
+
+.announcement-username {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.announcement-hbox {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.announcement-title {
+    font-weight: bold;
+    font-size: 14px;
+    -fx-text-fill: #800100;
+}
+
+.announcement-content {
+    font-size: 12px;
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -fx-text-fill: #800100;
+    -fx-wrap-text: true;
+
+}
+
+.announcement-timestamp {
+    font-size: 10px;
+    color: #888;
+}

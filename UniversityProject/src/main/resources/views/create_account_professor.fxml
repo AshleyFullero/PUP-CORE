@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/register_student.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.CreateProfessorAccountController">
+    <children>
+        <Label layoutX="109.0" layoutY="23.0" prefHeight="40.0" prefWidth="265.0" text="Create Account" />
+        <Label layoutX="175.0" layoutY="102.0" prefHeight="16.0" prefWidth="118.0" styleClass="student-label" text="FOR PROFESSORS" />
+        <TextField fx:id="firstNameField" layoutX="130.0" layoutY="152.0" prefHeight="30.0" prefWidth="203.0" promptText="First Name" />
+        <TextField fx:id="middleNameField" layoutX="130.0" layoutY="217.0" prefHeight="30.0" prefWidth="203.0" promptText="Middle Name (Type ‘None’ if not a" />
+        <TextField fx:id="lastNameField" layoutX="130.0" layoutY="282.0" prefHeight="30.0" prefWidth="203.0" promptText="Last Name" />
+        <TextField fx:id="emailField" layoutX="130.0" layoutY="347.0" prefHeight="30.0" prefWidth="203.0" promptText="Email address" />
+        <PasswordField fx:id="passwordField" layoutX="133.0" layoutY="412.0" prefHeight="30.0" prefWidth="203.0" promptText="Password" />
+        <PasswordField fx:id="confirmPasswordField" layoutX="132.0" layoutY="477.0" prefHeight="30.0" prefWidth="203.0" promptText="Confirm Password" />
+        <Button fx:id="createBtn" layoutX="131.0" layoutY="570.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="203.0" styleClass="loginButton" text="Create" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="backBtn" layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-font-size: 26;" text="←" />
+    </children>
+</AnchorPane>

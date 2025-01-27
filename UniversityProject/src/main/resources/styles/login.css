@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+.root{
+    /*-fx-background-color: white;*/
+    -fx-font-family: "League Spartan","Poppins","Fira Code";
+    -fx-background-color: transparent;
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+
+}
+
+.label{
+    -fx-background-radius: 20px;
+    -fx-text-fill:  #800100;
+    -fx-font-weight: bold;
+
+}
+
+
+.heading{
+    -fx-font-size: 62px;
+    -fx-text-fill:  #800100;
+    -fx-font-weight: bold;
+
+}
+
+
+.bold {
+    -fx-font-family: 'League Spartan';
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.loginButton{
+    -fx-background-color: #008B56;
+    -fx-background-radius: 10px;
+}
+
+.loginButton:hover {
+    -fx-background-color: #00FF99;
+    -fx-text-fill: white;
+}
+
+.email-field{
+    -fx-background-color: #F1ECE6;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #686363;
+
+}
+
+.password-field{
+    -fx-background-color: #CFCFCF;
+    -fx-font-size: 16px;
+    -fx-background-radius:10px;
+    -fx-text-fill: #686363;
+}
+
+.register-button{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.register-button:hover {
+    -fx-background-color: #FFBFFF;
+    -fx-text-fill: black;
+    -fx-border-color: #911639;
+}
+
+
+.vbox {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 4);
+}

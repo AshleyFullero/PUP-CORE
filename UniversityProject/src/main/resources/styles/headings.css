@@ -1,0 +1,74 @@
+
+.label-heading {
+    -fx-text-fill: #801000;
+    -fx-background-color: white;
+    -fx-font-family: "League Spartan", "Poppins";
+    -fx-padding: 10;
+}
+
+
+.label-heading-h1 {
+    -fx-text-fill: #801000;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.label-heading-h2 {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label-heading-h3 {
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+}
+
+.label-heading-shadow {
+    -fx-effect: dropshadow(gaussian, gray, 3, 0.5, 1, 1);
+}
+
+.label-heading-uppercase {
+    -fx-text-transform: uppercase;
+}
+
+.text-field{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.combo-box{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.list-view{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.register-button{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+.register-button:hover {
+    -fx-background-color: #800100;
+    -fx-text-fill: white;
+    -fx-border-color: #911639;
+}

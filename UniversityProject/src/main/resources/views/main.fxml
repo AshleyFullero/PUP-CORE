@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="440.0" style="-fx-background-radius: 120px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.start.MainController">
+    <ImageView fx:id="imageView" fitHeight="600.0" fitWidth="440.0" />
+</AnchorPane>

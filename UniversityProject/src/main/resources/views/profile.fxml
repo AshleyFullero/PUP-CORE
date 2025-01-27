@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="689.0" minHeight="689.0" prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../styles/user_dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.ProfileController">
+    <Button layoutX="-1.0" layoutY="1.0" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+
+    <ImageView fitHeight="80.0" fitWidth="400.0" layoutX="20.0" layoutY="43.0">
+      <image>
+         <Image url="@../icons/Rectangle%2020.png" />
+      </image></ImageView>
+
+    <Button layoutX="15.0" layoutY="158.0" onAction="#handleEditPhoto" prefHeight="23.0" prefWidth="80.0" style="-fx-font-size: 12; -fx-background-color: #801000; -fx-text-fill: white; -fx-background-radius: 16px;" text="Edit Photo" />
+   <Pane fx:id="statusLabel2" layoutX="106.0" layoutY="129.0" prefHeight="54.0" prefWidth="324.0" style="-fx-background-radius: 50px; -fx-border-radius: 20px; -fx-background-color: #F1ECE6;">
+      <children>
+      
+          <Label fx:id="username" layoutX="9.0" layoutY="1.0" prefHeight="49.0" prefWidth="200.0" style="-fx-font-size: 18px;" styleClass="heading" text="Timothy Something" wrapText="true" />
+          <Label fx:id="userYear" alignment="CENTER" layoutX="200.0" layoutY="17.0" prefHeight="20.0" prefWidth="117.0" style="-fx-font-size: 11; -fx-text-fill: #801000;" text="------------" />
+      </children>
+   </Pane>
+   <Pane layoutX="20.0" layoutY="209.0" prefHeight="187.0" prefWidth="400.0" style="-fx-background-radius: 20px; -fx-background-color: #F1ECE6;">
+      <children>
+           <Label style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #801000;" text="About Me" />
+           <TextArea fx:id="aboutMeTextArea" editable="false" layoutY="30.0" prefHeight="150.0" prefWidth="400.0" promptText="About me" style="-fx-font-size: 14; -fx-border-color: transparent; -fx-background-radius: 16px;" wrapText="true" />
+      
+          <Button layoutX="335.0" onAction="#handleEditAboutMe" style="-fx-font-size: 12; -fx-background-color: transparent;" text="Edit">
+            <graphic>
+               <FontAwesomeIcon glyphName="EDIT" />
+            </graphic>
+         </Button>
+      </children>
+   </Pane>
+
+    <VBox layoutX="20.0" layoutY="454.0" prefHeight="150.0" prefWidth="400.0" spacing="10">
+        <Label style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #800100;" text="Activity" />
+        <VBox fx:id="activityBox" prefHeight="101.0" prefWidth="360" spacing="5">
+            <HBox spacing="10">
+                <Circle radius="20" style="-fx-fill: #8B0000;">
+
+                </Circle>
+                <VBox>
+                    <Label fx:id="activityUsernameLbl" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Timothy Something" />
+                    <Label fx:id="activityDateLbl" style="-fx-font-size: 12;" text="January 15, 2025" />
+                </VBox>
+            </HBox>
+         <ListView fx:id="postListView" prefHeight="200.0" prefWidth="200.0" />
+        </VBox>
+    </VBox>
+   <Pane layoutY="609.0" maxHeight="80.0" prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+      <children>
+           <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2019.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+           <Button layoutX="132.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(1).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+           <Button layoutX="228.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2017.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="316.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../navbar/Subtract.png" />
+            </image>
+         </ImageView>
+           <Button layoutX="328.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(2).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </Pane>
+
+    <Circle layoutX="80.0" layoutY="112.0" radius="30.0" style="-fx-fill: #8B0000;">
+    </Circle>
+   <ImageView fx:id="userProfileIcon" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="82.0" pickOnBounds="true" style="-fx-fit-height: 60; -fx-fit-width: 60;">
+      <image>
+         <Image url="@../icons/default-profile.png" />
+      </image>
+   </ImageView>
+   <Button layoutX="327.0" layoutY="16.0" onAction="#handleEditProfile" style="-fx-font-size: 12; -fx-background-color: transparent;" text="Edit">
+      <graphic>
+         <FontAwesomeIcon glyphName="EDIT" />
+      </graphic>
+   </Button>
+   <Button fx:id="awardsBtn" layoutX="77.0" layoutY="412.0" onAction="#handleNavigateToAwards" style="-fx-font-size: 14; -fx-background-color: #801000; -fx-text-fill: white; -fx-background-radius: 16px;" text="Awards, Club Recognitions, Certifications" />
+   <Button fx:id="logoutBtn" layoutX="383.0" layoutY="9.0" onAction="#handleLogout" prefHeight="40.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+      <graphic>
+         <ImageView fitHeight="17.0" fitWidth="26.0" pickOnBounds="true">
+            <image>
+               <Image url="@../icons/logOut.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+</AnchorPane>

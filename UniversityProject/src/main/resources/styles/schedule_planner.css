@@ -1,0 +1,107 @@
+.root {
+    -fx-background-color: white;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+
+.label {
+    -fx-text-fill: #801000;
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+
+.heading {
+    -fx-text-fill: #801000;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-font-family: "League Spartan","Poppins","Arial";
+}
+
+
+.button {
+    -fx-background-color: #801000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "League Spartan","Nunito","Arial";
+    -fx-border-radius: 10px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 2;
+    -fx-pref-height: 40;
+}
+
+.logoutButton{
+    -fx-background-color: #ff0000;
+    -fx-border-color: white;
+}
+
+.button:hover {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: white;
+}
+
+.text-field, .password-field {
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5 10;
+    -fx-pref-height: 40;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: white;
+    -fx-text-fill: #87CEEB;
+}
+
+
+/* Date Picker Styles */
+.date-picker {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-border-color: #87CEEB;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 5 10;
+}
+
+.date-picker .text {
+    -fx-fill: black;
+}
+
+.date-picker:focused {
+    -fx-border-color: white;
+}
+
+
+.tooltip {
+    -fx-background-color: #87CEEB;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "League Spartan","Nunito","Arial";
+    -fx-background-radius: 10px;
+}
+
+.combo-box {
+    -fx-font-size: 16px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box:focused {
+    -fx-border-color: white;
+}
+
+
+.scroll-bar {
+    -fx-background-color: black;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+
+

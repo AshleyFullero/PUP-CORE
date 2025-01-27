@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxWidth="440.0" minWidth="440.0" prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/headings.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.AddProfessorDetailsController">
+     <Label layoutX="150.0" layoutY="14.0" styleClass="label-heading-h1" text="Add  Details" />
+
+      <Label layoutX="33.0" layoutY="161.0" style="-fx-text-fill: #801000;" styleClass="label-heading-h3" text="Departments:" />
+    <ComboBox fx:id="departmentComboBox" layoutX="170.0" layoutY="157.0" prefHeight="32.0" prefWidth="226.0" promptText="Select Department" />
+
+      <Label layoutX="35.0" layoutY="238.0" style="-fx-text-fill: #801000;" styleClass="label-heading-h3" text="Office Hours:" />
+      <TextField fx:id="officeHoursField" layoutX="172.0" layoutY="234.0" prefHeight="32.0" prefWidth="226.0" promptText="Enter Office Hours" />
+
+      <Label layoutX="25.0" layoutY="308.0" style="-fx-text-fill: #801000;" styleClass="label-heading-h3" text="Subjects Taught:" />
+      <TextField fx:id="subjectsTaughtField" layoutX="172.0" layoutY="304.0" prefHeight="32.0" prefWidth="226.0" promptText="Enter Subjects Taught" />
+
+     <Label layoutX="25.0" layoutY="398.0" style="-fx-text-fill: #801000;" styleClass="label-heading-h3" text="Subjects List:" />
+     <ListView fx:id="subjectsListView" layoutX="172.0" layoutY="378.0" prefHeight="100.0" prefWidth="226.0" />
+
+     <Button layoutX="189.0" layoutY="507.0" onAction="#handleAddDetails" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: #801000; -fx-text-fill: white; -fx-background-radius: 16px; -fx-font-size: 16px;" text="Save" />
+   <Label fx:id="usernameLbl" layoutX="24.0" layoutY="85.0" prefHeight="29.0" prefWidth="398.0" style="-fx-text-fill: #801000;" styleClass="label-heading-h2" text="Label" />
+   <Button onAction="#backAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+   <Pane layoutY="609.0" maxHeight="80.0" prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+      <children>
+         <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2019.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="114.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(1).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="203.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2017.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="287.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../navbar/Subtract.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="300.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(2).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </Pane>
+</AnchorPane>

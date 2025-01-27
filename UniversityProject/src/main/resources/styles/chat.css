@@ -1,0 +1,87 @@
+.list-view {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #dcdcdc;
+    -fx-padding: 10;
+    -fx-font-family: League Spartan, Poppins;
+}
+
+
+.list-cell {
+    -fx-text-fill: #000000;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+    -fx-alignment: center-right;
+}
+
+
+.list-cell:focused,
+.list-cell:selected {
+    -fx-background-color: #801000;
+    -fx-text-fill: #ffffff;
+}
+
+.sender-bubble {
+    -fx-background-color: #CDE4FF;
+    -fx-text-fill: #000000;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center-right;
+}
+
+
+.receiver-bubble {
+    -fx-background-color: #E4FFC9;
+    -fx-text-fill: #000000;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center-left;
+}
+
+.message-timestamp {
+    -fx-font-size: 10px;
+    -fx-text-fill: #888888;
+}
+
+
+.message-username {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+}
+
+
+.button {
+    -fx-background-color: #801000;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #a03030;
+}
+
+
+.scroll-bar {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #dcdcdc;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #801000;
+    -fx-border-radius: 5;
+}

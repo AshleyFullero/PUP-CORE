@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxWidth="440.0" minWidth="440.0" prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/user_dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.AnnouncementController">
+   <children>
+      <ImageView fx:id="homeBtn" fitHeight="49.0" fitWidth="86.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileBtn" fitHeight="49.0" fitWidth="86.0" layoutX="77.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/Rectangle%2023.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileIcon" fitHeight="39.0" fitWidth="24.0" layoutX="89.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/🦆%20icon%20_person_.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="searchUsersIcon" fitHeight="50.0" fitWidth="259.0" layoutX="141.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/Rectangle%2021.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="217.0" layoutY="26.0" styleClass="sub-heading" text="Search Users" />
+      <Label fx:id="announcementLbl" layoutX="25.0" layoutY="90.0" style="-fx-font-size: 28px;" styleClass="heading" text="ANNOUNCEMENTS">
+         <tooltip>
+            <Tooltip style="-fx-font-size: 12px;" text="Click to view detailed view" />
+         </tooltip></Label>
+      <Pane layoutX="21.0" layoutY="132.0" prefHeight="189.0" prefWidth="391.0" style="-fx-background-radius: 20px;">
+         <children>
+            <ListView fx:id="announcementsListView" layoutY="-1.0" prefHeight="189.0" prefWidth="391.0" style="-fx-background-color: #F1ECE6;" />
+         </children>
+      </Pane>
+      <Pane layoutY="609.0" maxHeight="80.0" maxWidth="440.0" minWidth="440.0" prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="114.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="203.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2017.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="12.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="306.0" layoutY="9.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="27.0" layoutY="-25.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/E.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ListView fx:id="messageListView" layoutX="22.0" layoutY="372.0" prefHeight="213.0" prefWidth="391.0" style="-fx-background-color: #F1ECE6;" />
+      <Button fx:id="addAnnouncementBtn" layoutX="317.0" layoutY="94.0" style="-fx-background-color: #800000; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 5 10; -fx-background-radius: 16px;" text="Add More+" />
+      <Label fx:id="messageLbl" layoutX="24.0" layoutY="328.0" prefHeight="40.0" prefWidth="152.0" style="-fx-font-size: 28px;" styleClass="heading" text="Messages">
+         <tooltip>
+            <Tooltip style="-fx-font-size: 12px;" text="Click to view detailed view" />
+         </tooltip>
+      </Label>
+   </children>
+</AnchorPane>

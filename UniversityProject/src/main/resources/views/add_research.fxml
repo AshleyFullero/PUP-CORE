@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="689.0" prefWidth="440.0" spacing="10.0" style="-fx-background-color: white;" stylesheets="@../styles/awards.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.AddResearchController">
+    <HBox prefHeight="61.0" prefWidth="440.0" spacing="60.0">
+        <children>
+            <Button onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+            <Label styleClass="heading" text="Add Research">
+                <HBox.margin>
+                    <Insets top="10.0" />
+                </HBox.margin></Label>
+        </children>
+    </HBox>
+
+    <ImageView fx:id="iconImageView" fitHeight="80.0" fitWidth="56.0" preserveRatio="true">
+        <image>
+            <Image url="@../icons/research.png" />
+        </image>
+        <VBox.margin>
+            <Insets top="5.0" />
+        </VBox.margin>
+    </ImageView>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label styleClass="sub-heading" text="Research Title:" />
+        <TextField fx:id="publicationNameField" prefHeight="24.0" prefWidth="199.0" promptText="Title of Research" />
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </HBox>
+
+    <VBox alignment="CENTER" prefHeight="260.0" prefWidth="440.0" spacing="5">
+        <Label styleClass="sub-heading" text="Description:" />
+        <TextArea fx:id="descriptionArea" prefHeight="204.0" prefRowCount="3" prefWidth="420.0" promptText="Description" wrapText="true">
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin></TextArea>
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label styleClass="sub-heading" text="Date:" />
+        <DatePicker fx:id="datePicker" promptText="Date of Publication" />
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </HBox>
+
+    <Button fx:id="saveButton" onAction="#savePublication" style="-fx-font-weight: bold;" styleClass="changeButton" text="SAVE">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin></Button>
+
+    <Pane maxHeight="80.0" minHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+        <children>
+            <Button layoutX="25.0" layoutY="-4.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                <graphic>
+                    <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../navbar/image%2019.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button layoutX="115.0" layoutY="4.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                <graphic>
+                    <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../navbar/Mask%20group(1).png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button layoutX="205.0" layoutY="4.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                <graphic>
+                    <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../navbar/image%2017.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="287.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../navbar/Subtract.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="300.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                <graphic>
+                    <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../navbar/Mask%20group(2).png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </children>
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+    </Pane>
+</VBox>

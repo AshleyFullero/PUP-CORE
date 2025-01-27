@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="440.0" minWidth="440.0" prefHeight="400.0" prefWidth="440.0" stylesheets="@../styles/add_task.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.AddTaskController">
+   <children>
+      <Pane layoutY="605.0" maxHeight="80.0" minHeight="80.0" prefHeight="71.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="25.0" layoutY="1.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2019.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="103.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="321.0" layoutY="4.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="219.0" layoutY="8.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/R.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="118.0" layoutY="-17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutY="-1.0" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="25.0" prefHeight="46.0" prefWidth="441.0" styleClass="heading" text="Add Task" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="63.0" prefHeight="31.0" prefWidth="102.0" styleClass="sub-heading" text="Task Name" textAlignment="CENTER" />
+      <TextField fx:id="taskNameField" layoutX="55.0" layoutY="94.0" prefHeight="46.0" prefWidth="333.0" style="-fx-background-radius: 16px; -fx-border-width: 1px;" />
+      <Label alignment="CENTER" layoutX="23.0" layoutY="156.0" prefHeight="31.0" prefWidth="118.0" styleClass="sub-heading" text="Team Member" textAlignment="CENTER" />
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="33.0" layoutY="190.0" prefHeight="102.0" prefWidth="380.0">
+         <content>
+            <HBox fx:id="memberHBox" prefHeight="86.0" prefWidth="353.0" />
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="17.0" layoutY="307.0" prefHeight="31.0" prefWidth="56.0" styleClass="sub-heading" text="Date" textAlignment="CENTER" />
+      <DatePicker fx:id="datePicker" layoutX="70.0" layoutY="311.0" prefHeight="24.0" prefWidth="295.0" />
+      <Pane layoutX="29.0" layoutY="353.0" prefHeight="118.0" prefWidth="380.0" style="-fx-background-color: #7F0000; -fx-background-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="10.0" prefHeight="31.0" prefWidth="74.0" text="Start Time" textAlignment="CENTER" textFill="#fffefe" />
+            <Label alignment="CENTER" layoutX="214.0" layoutY="9.0" prefHeight="31.0" prefWidth="74.0" text="End Time" textAlignment="CENTER" textFill="#fffefe" />
+            <ComboBox fx:id="startTimeComboBox" layoutX="14.0" layoutY="47.0" prefHeight="26.0" prefWidth="150.0" promptText="Select Start Time">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="08:00 AM" />
+                     <String fx:value="09:00 AM" />
+                     <String fx:value="10:00 AM" />
+                     <String fx:value="11:00 AM" />
+                     <String fx:value="12:00 PM" />
+                     <String fx:value="01:00 PM" />
+                     <String fx:value="02:00 PM" />
+                     <String fx:value="03:00 PM" />
+                     <String fx:value="04:00 PM" />
+                     <String fx:value="05:00 PM" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="endTimeComboBox" layoutX="210.0" layoutY="47.0" prefHeight="26.0" prefWidth="144.0" promptText="Select End Time">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="08:00 AM" />
+                     <String fx:value="09:00 AM" />
+                     <String fx:value="10:00 AM" />
+                     <String fx:value="11:00 AM" />
+                     <String fx:value="12:00 PM" />
+                     <String fx:value="01:00 PM" />
+                     <String fx:value="02:00 PM" />
+                     <String fx:value="03:00 PM" />
+                     <String fx:value="04:00 PM" />
+                     <String fx:value="05:00 PM" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="481.0" prefHeight="31.0" prefWidth="56.0" styleClass="sub-heading" text="Board" textAlignment="CENTER" />
+      <Button fx:id="saveBtn" layoutX="141.0" layoutY="552.0" mnemonicParsing="false" styleClass="save-Button" text="Save" />
+      <RadioButton fx:id="groupBtn1" layoutX="55.0" layoutY="522.0" mnemonicParsing="false" text="Urgent" />
+      <RadioButton fx:id="groupBtn2" layoutX="167.0" layoutY="522.0" mnemonicParsing="false" text="Running" />
+      <RadioButton fx:id="groupBtn3" layoutX="291.0" layoutY="522.0" mnemonicParsing="false" text="OnGoing" />
+      <TextField fx:id="searchField" layoutX="164.0" layoutY="154.0" prefHeight="31.0" prefWidth="219.0" promptText="Name of Member" style="-fx-background-radius: 16px; -fx-border-radius: 16px; -fx-border-color: #800100;" />
+      <Button fx:id="sendBtn" layoutX="388.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleSearch">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+.root{
+    -fx-font-family: League Spartan,Poppins
+}
+.label{
+    -fx-text-fill:  #800100;
+    -fx-font-size: 32px;
+}
+
+.sub-heading{
+    -fx-text-fill:  #800100;
+    -fx-font-size: 18px;
+}
+.text-field{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.combo-box{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.text-area{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #a03030;
+}
+
+.save-Button{
+    -fx-background-color: #800100;
+    -fx-background-radius: 16px;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-min-width: 150px;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="689.0" prefWidth="440.0" stylesheets="@../styles/user_dashboard.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.ConversationController">
+   <children>
+      <Pane layoutY="609.0" maxHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="147.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="234.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2017.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="18.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="327.0" layoutY="9.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="36.0" layoutY="-25.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/E.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="backBtn" onAction="#backAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+      <Label layoutX="186.0" layoutY="28.0" styleClass="heading" text="Write" />
+      <Label layoutX="28.0" layoutY="89.0" styleClass="sub-heading" text="To:" />
+      <Label layoutX="28.0" layoutY="129.0" styleClass="sub-heading" text="From:" />
+      <TextArea fx:id="mailText" layoutX="28.0" layoutY="180.0" prefHeight="353.0" prefWidth="392.0" promptText="Compose mail" style="-fx-border-color: #801000;" />
+      <TextField fx:id="toField" layoutX="98.0" layoutY="85.0" prefHeight="24.0" prefWidth="322.0" style="-fx-border-color: #801000;" />
+      <TextField fx:id="fromField" layoutX="98.0" layoutY="125.0" prefHeight="24.0" prefWidth="322.0" style="-fx-border-color: #801000;" />
+      <Button fx:id="sendBtn" layoutX="160.0" layoutY="546.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" style="-fx-background-radius: 8px; -fx-background-color: #7F0000; -fx-background-radius: 16px;" text="Send" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="SEND" />
+         </graphic>
+      </Button>
+      <ListView fx:id="suggestionListView" layoutX="98.0" layoutY="113.0" prefHeight="200.0" prefWidth="322.0" />
+   </children>
+</AnchorPane>

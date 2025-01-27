@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="689.0" prefWidth="440.0" stylesheets="@../styles/offices.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.FacilitiesController">
+   <children>
+      <Pane layoutY="610.0" maxHeight="80.0" prefHeight="94.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2019.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="130.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="220.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="320.0" layoutY="8.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="232.0" layoutY="-20.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/R.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="26.0" prefHeight="570.0" prefWidth="440.0" vbarPolicy="ALWAYS">
+         <content>
+            <Pane prefHeight="2150.0" prefWidth="423.0">
+               <children>
+                  <Label layoutX="20.0" styleClass="heading" text="Facilities and Offices" />
+                  <Label layoutX="125.0" layoutY="61.0" styleClass="sub-heading" text="Sports Facilities" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="220.0" layoutY="101.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/4.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="56.0" layoutY="101.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/38_Multi-purpose%20Building.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="250.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/5_Lawn%20Tennis%20Court.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="220.0" layoutY="250.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/16.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="127.0" layoutY="567.0" prefHeight="23.0" prefWidth="149.0" styleClass="sub-heading" text="University Facilities" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="222.0" layoutY="600.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/10_Obelisk.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="54.0" layoutY="600.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/1_The%20Pylon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="216.0" layoutY="900.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/2_The%20Mural.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="50.0" layoutY="750.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/7_Souvenir%20Shop.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="50.0" layoutY="402.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/17_Oval.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="223.0" layoutY="402.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../SPORTS%20FACILITIES/37_Swimming%20Pool.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="50.0" layoutY="900.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/9.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="216.0" layoutY="750.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNIVERSITY%20FACILITIES/8.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="137.0" layoutY="1050.0" prefHeight="23.0" prefWidth="149.0" styleClass="sub-heading" text="Student Facilities" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="226.0" layoutY="1080.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/15.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="1080.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/26.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="1230.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/30_Ninoy%20Aquino%20Learning%20Resource%20Center.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="226.0" layoutY="1230.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/32_Ampitheather.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="226.0" layoutY="1380.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/35.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="1380.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../STUDENT%20FACILITIES/36_Tahanan%20ng%20Alumni.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="147.0" layoutY="1540.0" prefHeight="23.0" prefWidth="149.0" styleClass="sub-heading" text="Under Construction" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="1570.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNDER%20CONSTRUCTION/12.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="226.0" layoutY="1570.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNDER%20CONSTRUCTION/11.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="52.0" layoutY="1760.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNDER%20CONSTRUCTION/23.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="226.0" layoutY="1760.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../UNDER%20CONSTRUCTION/11.HEIC.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="157.0" layoutY="1900.0" prefHeight="23.0" prefWidth="149.0" styleClass="sub-heading" text="Religious Facility" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="150.0" layoutY="1930.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../RELIGIOUS%20FACILITIES/13_Inter-Faith%20Chapel.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="backBtn" layoutY="-10.0" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+   </children>
+</AnchorPane>

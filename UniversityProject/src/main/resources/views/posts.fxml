@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="689.0" prefWidth="440.0" spacing="10" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.PostController">
+   <HBox prefHeight="49.0" prefWidth="440.0" spacing="20.0">
+      <children>
+         <ImageView fx:id="homeBtn" fitHeight="40.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../iskompass/Group%201000000756.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="profileBtn" fitHeight="49.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../icons/Group%2017.png" />
+            </image>
+            <HBox.margin>
+               <Insets top="5.0" />
+            </HBox.margin>
+         </ImageView>
+         <TextField fx:id="postTextField" promptText="Whats on your mind?">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+         </TextField>
+          <Label styleClass="heading" stylesheets="@../styles/posts.css" text="Posts" />
+      </children>
+      <VBox.margin>
+         <Insets top="5.0" />
+      </VBox.margin>
+   </HBox>
+    <ListView fx:id="postListView" maxHeight="513.0" maxWidth="440.0" prefHeight="513.0" prefWidth="440.0" style="-fx-pref-width: 400; -fx-pref-height: 600;">
+        <items>
+            <FXCollections fx:factory="observableArrayList" />
+        </items>
+    </ListView>
+   <Pane maxHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+      <children>
+         <Button layoutX="25.0" layoutY="-4.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2019.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="120.0" layoutY="4.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(1).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="219.0" layoutY="4.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2017.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="302.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../navbar/Subtract.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="316.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(2).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="27.0" />
+      </VBox.margin>
+   </Pane>
+</VBox>

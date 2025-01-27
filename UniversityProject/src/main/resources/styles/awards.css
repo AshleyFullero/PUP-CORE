@@ -1,0 +1,54 @@
+.label{
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "League Spartan","Poppins";
+}
+
+.heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 32px;
+    -fx-font-family: "League Spartan";
+    -fx-font-weight: bold;
+}
+
+.sub-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan";
+}
+
+.changeButton{
+    -fx-background-color: #800100;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-font-family: "League Spartan";
+    -fx-background-radius: 16px;
+}
+
+
+.saveButton{
+    -fx-background-color: #800100;
+    -fx-background-radius: 16px;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "League Spartan";
+}
+
+.text-field{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+.text-area{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}

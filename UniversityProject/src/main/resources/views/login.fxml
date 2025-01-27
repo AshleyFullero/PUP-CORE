@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stage" maxWidth="440.0" minWidth="440.0" prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="105.0" layoutX="185.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="129.0" prefHeight="89.0" prefWidth="440.0" styleClass="heading" text="PUP CORE" textFill="WHITE">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="92.0" layoutY="245.0" prefHeight="29.0" prefWidth="260.0" promptText="Email" styleClass="email-field">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </TextField>
+      <ImageView fitHeight="24.0" fitWidth="12.0" layoutX="100.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/user-solid%201.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="92.0" layoutY="302.0" prefHeight="29.0" prefWidth="260.0" promptText="Password" style="-fx-background-radius: 20px;" styleClass="password-field">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </PasswordField>
+      <ImageView fitHeight="29.0" fitWidth="12.0" layoutX="98.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/key-solid%201.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginBtn" layoutX="89.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="31.0" prefWidth="260.0" styleClass="loginButton" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerBtn" layoutX="93.0" layoutY="586.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="32.0" prefWidth="249.0" styleClass="register-button" text="No Account? Register" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="logoutIcon" fitHeight="30.0" fitWidth="29.0" layoutX="395.0" layoutY="15.0" onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logOut.png" />
+         </image>
+      </ImageView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

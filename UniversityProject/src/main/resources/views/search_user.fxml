@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="689.0" prefWidth="440" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.SearchUsersController">
+
+    <Label layoutX="79.0" layoutY="14.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #801000;" text="Search Users" />
+
+    <TextField fx:id="searchField" layoutX="72.0" layoutY="59.0" prefWidth="300" promptText="Enter username" style="-fx-background-radius: 16px; -fx-border-color: #801000; -fx-border-radius: 16px;" />
+
+    <TableView fx:id="resultsTable" layoutX="20" layoutY="110" prefHeight="462.0" prefWidth="400" stylesheets="@../styles/table_view.css">
+        <columns>
+            <TableColumn fx:id="userIdColumn" prefWidth="65.0" text="User ID" />
+            <TableColumn fx:id="usernameColumn" prefWidth="235.0" text="Username" />
+            <TableColumn fx:id="viewProfileColumn" prefWidth="98.0" text="Profile" />
+        </columns>
+    </TableView>
+
+   <Pane layoutY="609.0" maxHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+      <children>
+         <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2019.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="130.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(1).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="223.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/image%2017.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="314.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../navbar/Subtract.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="325.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+            <graphic>
+               <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../navbar/Mask%20group(2).png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </Pane>
+   <Button layoutY="-4.0" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←" />
+
+</AnchorPane>

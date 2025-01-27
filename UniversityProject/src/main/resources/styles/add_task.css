@@ -1,0 +1,26 @@
+.heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 32px;
+    -fx-font-family: "League Spartan";
+    -fx-font-weight: bold;
+}
+
+.sub-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan";
+}
+
+.mini-heading{
+    -fx-text-fill: #800100;
+    -fx-font-size: 13px;
+    -fx-font-family: "League Spartan";
+}
+
+.save-Button{
+    -fx-background-color: #800100;
+    -fx-background-radius: 16px;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-min-width: 150px;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.MainAcademicController">
+    <children>
+        <Pane layoutX="-1.0" layoutY="614.0" prefHeight="71.0" prefWidth="441.0" style="-fx-background-color: #800100;">
+            <children>
+                <Button layoutX="25.0" layoutY="2.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/image%2019.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="114.0" layoutY="12.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/Mask%20group(1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="193.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../navbar/Subtract.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="302.0" layoutY="3.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/Mask%20group(2).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="206.0" layoutY="-20.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+                    <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../navbar/R.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <Button onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="584.0" fitWidth="440.0" layoutY="44.0" pickOnBounds="true">
+            <image>
+                <Image url="@../frames/Frame%208.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="closeBtn" alignment="CENTER" layoutX="291.0" layoutY="520.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" style="-fx-background-radius: 25px; -fx-background-color: #333333;" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <graphic>
+                <FontAwesomeIcon glyphName="CLOSE" size="1.4em" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

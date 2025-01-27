@@ -1,0 +1,20 @@
+.label{
+    -fx-background-radius: 20px;
+    -fx-text-fill:  #800100;
+    -fx-font-size: 40px;
+
+}
+
+.register-button{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #686363;
+    -fx-border-color: #800100;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+.register-button:hover {
+    -fx-background-color: #800100;
+    -fx-text-fill: white;
+    -fx-border-color: #911639;
+}

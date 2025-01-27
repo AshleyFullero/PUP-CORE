@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="689.0" prefHeight="400.0" prefWidth="440.0" stylesheets="@../styles/chat.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.CommunicationController">
+   <children>
+      <Pane layoutY="609.0" maxHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="114.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="203.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2017.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="12.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="302.0" layoutY="9.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="27.0" layoutY="-25.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/E.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="profileBtn" fitHeight="49.0" fitWidth="86.0" layoutX="88.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/Rectangle%2023.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userProfileIcon" fitHeight="40.0" fitWidth="40.0" layoutX="92.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/🦆%20icon%20_person_.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="274.0" layoutX="152.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/Rectangle%2021.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backBtn" onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent; -fx-text-fill: black;" text="←" />
+      <Label fx:id="usernameLbl" layoutX="168.0" layoutY="25.0" prefHeight="16.0" prefWidth="239.0" text="username" />
+      <Pane layoutX="11.0" layoutY="73.0" prefHeight="510.0" prefWidth="417.0">
+         <children>
+            <ListView fx:id="messageListView" prefHeight="442.0" prefWidth="417.0" />
+            <HBox layoutX="-3.0" layoutY="458.0" prefHeight="50.0" prefWidth="423.0">
+               <children>
+                  <TextField fx:id="messageTextField" prefHeight="53.0" prefWidth="318.0" promptText="Type new Message Here" />
+                  <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="53.0" prefWidth="107.0" style="-fx-background-color: #800100;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SEND" size="1.4em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

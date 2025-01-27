@@ -1,0 +1,39 @@
+-root{
+    -fx-background-color:  #800100;
+    -fx-font-family: "League Spartan", Poppins, sans-serif;
+}
+
+.background-color{
+    -fx-background-color:  #800100;
+}
+
+.button{
+    -fx-background-radius: 20px;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+
+.text-field{
+    -fx-background-radius: 20px;
+}
+
+
+.date-picker {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-border-color: #87CEEB;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 5 10;
+}
+
+.date-picker .text {
+    -fx-fill: black;
+}
+
+.date-picker:focused {
+    -fx-border-color: white;
+}

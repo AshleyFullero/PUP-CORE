@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UniversityProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UniversityProject_jar</output-path>
+    <root id="archive" name="UniversityProject.jar">
+      <element id="module-output" name="UniversityProject" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22.0.1/javafx-base-22.0.1-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/controlsfx/controlsfx/11.2.1/controlsfx-11.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22.0.1/javafx-controls-22.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22.0.1/javafx-graphics-22.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22.0.1/javafx-graphics-22.0.1-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/22.0.1/javafx-fxml-22.0.1-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22.0.1/javafx-base-22.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/22.0.1/javafx-fxml-22.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/de/jensd/fontawesomefx/8.2/fontawesomefx-8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22.0.1/javafx-controls-22.0.1-linux.jar" path-in-jar="/" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-54.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libprism_sw.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-56.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-57.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-ffmpeg-56.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-ffmpeg-57.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-ffmpeg-58.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-ffmpeg-59.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libavplugin-ffmpeg-60.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libdecora_sse.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libfxplugins.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libglass.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libglassgtk3.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libgstreamer-lite.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libjavafx_font.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libjavafx_font_freetype.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libjavafx_font_pango.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libjavafx_iio.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libjfxmedia.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libprism_common.so" />
+      <element id="file-copy" path="/opt/javafx-sdk-21.0.4/lib/libprism_es2.so" />
+    </root>
+  </artifact>
+</component>

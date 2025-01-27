@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="689.0" maxWidth="440.0" minHeight="689.0" minWidth="440.0" prefHeight="691.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/user_dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.StudentDashboardController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="411.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true">
+         <image>
+            <Image url="@../dashboard/Rectangle20.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="greetingLbl" alignment="TOP_LEFT" layoutX="38.0" layoutY="15.0" prefHeight="20.0" prefWidth="226.0" styleClass="sub-heading" text="Good Morning" textAlignment="CENTER" />
+      <Label fx:id="usernameLbl" layoutX="31.0" layoutY="29.0" prefHeight="46.0" prefWidth="280.0" styleClass="heading" text="Timothy Sy!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <ImageView fx:id="profileImageIcon" fitHeight="60.0" fitWidth="60.0" layoutX="320.0" layoutY="13.0" pickOnBounds="true" style="-fx-fit-height: 60; -fx-fit-width: 60;">
+         <image>
+            <Image url="@../dashboard/Mask%20group(1).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="92.0" prefHeight="20.0" prefWidth="438.0" styleClass="sub-heading" text="This is Where your PUP story begins." />
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="8.0" layoutY="116.0" prefHeight="138.0" prefWidth="424.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+         <content>
+            <HBox prefHeight="122.0" prefWidth="386.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="cBtn" mnemonicParsing="false" prefHeight="122.0" prefWidth="210.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="106.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../dashboard/Group%207(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="oBtn" mnemonicParsing="false" prefHeight="124.0" prefWidth="214.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../dashboard/Group%20O.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="rBtn" mnemonicParsing="false" prefHeight="125.0" prefWidth="218.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../dashboard/Group%20116.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="eBtn" layoutX="462.0" layoutY="10.0" mnemonicParsing="false" prefHeight="127.0" prefWidth="218.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../dashboard/Group%20E.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="40.0" layoutY="259.0" styleClass="heading" text="PUPEvents" />
+      <Pane layoutX="28.0" layoutY="299.0" prefHeight="200.0" prefWidth="375.0" style="-fx-background-color: #F1ECE6;">
+         <children>
+            <Label layoutX="63.0" layoutY="4.0" style="-fx-font-weight: bold;" styleClass="mini-heading" text="“All your campus events in one place.”" />
+            <Button fx:id="eventBtn" layoutX="9.0" layoutY="26.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="359.0">
+               <graphic>
+                  <ImageView fitHeight="155.0" fitWidth="341.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../dashboard/image.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="30.0" layoutY="495.0" styleClass="heading" text="Announcements" />
+      <ScrollPane layoutY="535.0" prefHeight="96.0" prefWidth="440.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox maxWidth="440.0" minWidth="440.0" prefHeight="192.0" prefWidth="440.0">
+               <children>
+                  <ListView fx:id="announcementView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Pane layoutY="611.0" prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2019.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="127.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="221.0" layoutY="16.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2017.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="309.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="322.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="addEventBtn" layoutX="268.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #801000; -fx-text-fill: white; -fx-background-radius: 16px;" text="Add More">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="PLUS" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

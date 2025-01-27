@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="440.0" minWidth="440.0" prefHeight="689.0" prefWidth="440.0" style="-fx-background-color: white;" stylesheets="@../styles/awards.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.htech.universityproject.controllers.AwardsCertificatesController">
+    <children>
+      <Pane layoutX="1.0" maxHeight="689.0" minHeight="689.0" prefHeight="689.0" prefWidth="440.0">
+         <children>
+            <Pane layoutX="35.0" layoutY="54.0" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 20px; -fx-background-color: #800100;">
+               <children>
+                    <Label layoutX="8.0" layoutY="2.0" text="Awards" textAlignment="CENTER" />
+               </children>
+            </Pane>
+              <Button onAction="#handleBackAction" style="-fx-font-size: 26; -fx-background-color: transparent;" text="←">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+            <Pane layoutX="35.0" layoutY="232.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-radius: 20px; -fx-background-color: #800100;">
+               <children>
+                  <Label layoutX="8.0" layoutY="2.0" text="Club Recognitions" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="416.0" prefHeight="25.0" prefWidth="143.0" style="-fx-background-radius: 20px; -fx-background-color: #800100;">
+               <children>
+                  <Label layoutX="8.0" layoutY="2.0" text="Certifications" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Button fx:id="addMoreAwardBtn" layoutX="127.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="ADD MORE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL" />
+               </graphic>
+            </Button>
+            <Button fx:id="addMoreClubBtn" layoutX="225.0" layoutY="235.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="ADD MORE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL" />
+               </graphic>
+            </Button>
+            <Button fx:id="addMoreCertificationsBtn" layoutX="190.0" layoutY="419.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="ADD MORE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL" />
+               </graphic>
+            </Button>
+            <ListView fx:id="awardsListView" layoutX="28.0" layoutY="90.0" prefHeight="134.0" prefWidth="390.0" style="-fx-background-color: #F1ECE6;" />
+            <ListView fx:id="certificatesListView" layoutX="30.0" layoutY="451.0" prefHeight="134.0" prefWidth="390.0" style="-fx-background-color: #F1ECE6;" />
+            <ListView fx:id="clubRecognitionsListView" layoutX="30.0" layoutY="270.0" prefHeight="134.0" prefWidth="390.0" style="-fx-background-color: #F1ECE6;" />
+         </children>
+      </Pane>
+      <Pane layoutY="610.0" maxHeight="80.0" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #800100;">
+         <children>
+            <Button layoutX="25.0" layoutY="10.0" onAction="#handleNavigateToCore" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2019.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="132.0" layoutY="17.0" onAction="#handleNavigateToOther" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="228.0" layoutY="17.0" onAction="#handleNavigateToResources" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/image%2017.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="114.0" layoutX="316.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../navbar/Subtract.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="328.0" layoutY="-22.0" onAction="#handleNavigateToExtras" prefHeight="40.0" prefWidth="80.0" style="-fx-font-size: 16; -fx-background-color: transparent; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../navbar/Mask%20group(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
