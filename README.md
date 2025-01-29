@@ -167,7 +167,7 @@ Download the ZIP file and the SQL file for the project.
 | Conversations & User Search | View User Profiles & Achievements |  
 |-----------------------------|-----------------------------------|  
 | ![Conversations](screenshots/convo.png) | ![View Profile](screenshots/view.png) |  
-| ![Search User](screenshots/search.png) | ![Achievement Sharing](screenshots/achievement.png) |  
+| ![Search User](screenshots/search.png) | ![Achievement Sharing](screenshots/Achievement.png) |  
 
 #### 6. **Organization - user can add task and create events.**
 | Add Tasks & Events | Settings & Calendar |  
