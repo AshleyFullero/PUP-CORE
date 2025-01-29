@@ -189,8 +189,8 @@ Download the ZIP file and the SQL file for the project.
 #### 8. **Excellence - user can share Achievements, Thoughts, and Experiences**
 | View Post        | Create post       |  
 |------------------|-------------------|  
-| ![Excellence](screenshots/excellence.png) | ![Post View](screenshots/postview.png) |  
-| ![Post Creation](screenshots/post.png) | ![Image Post](screenshots/img_1.png) |  
+| ![Excellence](screenshots/excellence.png) | ![Post View](screenshots/post.png) |  
+| ![Post Creation](screenshots/postview.png) | ![Image Post](screenshots/img_1.png) |  
 
 ---
 
