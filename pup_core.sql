@@ -107,7 +107,7 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`course_id`, `course_name`) VALUES
-(11, 'achelor in Advertising and Public\nRelations (BADPR)'),
+(11, 'Bachelor in Advertising and Public\nRelations (BADPR)'),
 (10, 'Bachelor of Arts in Communication\nResearch (BACR)'),
 (6, 'Bachelor of Arts in Filipinology\n(ABF)'),
 (7, 'Bachelor of Arts in Literary and Cultural\nStudies (ABLCS)'),
