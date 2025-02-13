@@ -229,14 +229,6 @@ This project was developed solely for academic purposes under the guidance of th
 #### **Team Leader and Programming Lead**
 - **Ashley Nicole S. Fullero** — *Project Manager, Full-Stack Developer (Front-End & Back-End)*
 
-#### **Team Members**
-- **Nicko Adrian E. Baptista** — *Front-End, Documentation Specialist*
-- **Jule Alexander B. Coralde** — *UI/UX Designer, Documentation Specialist*
-- **Denelle Rose D. Nava** — *Front-End, Documentation Specialist*
-- **Kyle Ethan C. Porciuncula** — *UI/UX Designer, Documentation Specialist*
-- **Loreen May Jodi G. Gallos** — *Back-End, Documentation Specialist*
-- **Clarisse Jem T. Salazar** — *Back-End, Researcher*
-
 #### **Faculty Advisor**
 - **Prof. Chris Piamonte** — *For invaluable guidance and mentorship*
 
